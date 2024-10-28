@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="icon"  src="Logoo.png">
+    <title>FAR PORTFOLIO</title>
+    <style>
+       * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Sans-Serif;
+         color: white;
+         text-align: center;
+         justify-content: center;
+         
+       }
+       body {
+         display: absolute;
+         justify-content: center;
+         align-items: center;
+         min-height: 55px;
+         background: #040720;
+         text-align: center;
+         
+       }
+       nav a {
+         position: relative;
+         font-size: 1.5em;
+         font-weight: 500;
+         color: #0ef;
+         text-decoration: none;
+         padding: 6px 20px;
+         transition: .5s;
+        
+       }
+       nav a:hover {
+         color: #0ef;
+      
+         
+       }
+       
+       nav a span {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         border-bottom: 2px solid #0ef;
+         border-radius: 15px;
+         transform: scale(0) translate Y(50px);
+         opacity: 0;
+         transition: .5s;
+       }
+         nav a:hover span {
+           transform: scale(1) translate Y(0) ;
+           opacity: 1;
+         }
+         
+         
+        
+         
+         
+         .logo img {
+           width: 80px;
+           height: 80px;
+           border-radius: 50px;
+          margin: 20px;
+         }
+         
+         .home img {
+           width: 380px;
+           height: 430px;
+           margin: 30px;
+           border-radius: 30px;
+         }
+         
+         .home h2{
+           color: #1164d3ff;
+           text-align: center;
+         }
+         .sosmed {
+           display: flex;
+           margin: 20px 0px 20px 170px;
+         }
+         .sosmed img {
+           width: 50px;
+           height: 50px;
+           filter: grayscale(2);
+           margin: 15px 15px 15px 0px;
+           border-radius: 15px;
+          
+         }
+         
+         .sosmed img:hover {
+           filter: none;
+           transform: scale(2) translateY ();
+           transition: .5s;
+         }
+         .about {
+           display: flex;
+         }
+         
+
+         
+         .sekolah {
+        
+           border: 3px solid #0ef;
+           border-radius:10px ;
+           width: 230px;
+           height: 300px;
+           margin-left: 10px;
+           margin-top: 30px;
+         }
+         .sekolah img {
+           width: 200px;
+           height: 150px;
+           margin: 20px 20px 15px 12px;
+           border-radius: 5px;
+           
+          
+         }
+         .sekolah h2 {
+           color: black;
+           background-color: #0ef;
+           width: 120px;
+           height: 35px;
+           padding: 5px;
+           margin: 0px 0px 0px 50px;
+           border-radius: 10px;
+           
+         }
+         .sekolah h2:hover {
+           color: #0ef;
+           background-color: black;
+           border: 2px solid #0ef;
+           transform: scale(1) translateY(0);
+           transition: .5s;
+         }
+         .courses {
+           display: flex;
+         }
+         .sekolah a {
+           text-decoration: none;
+         }
+         .skill {
+           display: flex;
+           
+           
+         }
+         .skill img {
+           filter: grayscale(2);
+           width: 180px;
+           height: 200px;
+           margin: 50px 10px 20px 50px;
+         }
+         
+         .skill img:hover {
+           filter: none;
+           transform: scale(1) translateY(1);
+           transition: .5s;
+           
+         }
+         .contact {
+           margin: 30px;
+         }
+         .contact input {
+          width: 280px;
+          height: 40px;
+          background-color: black;
+          color: #0ef;
+          border: 1px solid #0ef;
+          transform: scale(1) translateY(0);
+          transition: .5s;
+        
+         }
+         .kotak {
+           margin: 30px;
+         }
+         .kotak input {
+          width: 280px;
+          height: 40px;
+          background-color: black;
+          color: #0ef;
+          border: 1px solid #0ef;
+          transform: scale(1) translateY(0);
+          transition: .5s;
+        
+         }
+         .kontak {
+           margin: 30px;
+         }
+         .kontak input {
+          width: 280px;
+          height: 40px;
+          background-color: black;
+          color: #0ef;
+          border: 1px solid #0ef;
+          transform: scale(2) translateY();
+          transition: .5s;
+         }
+         
+                  .pesan {
+           margin: 30px;
+         }
+         .pesan input {
+          width: 280px;
+          height: 40px;
+          background-color: black;
+          color: #0ef;
+          border: 1px solid #0ef;
+          transform: scale(2) translateY();
+          transition: .5s;
+          text-align: none;
+          padding: 30px;
+          
+         }
+         input {
+           border-radius: 15px;
+         }
+         
+         .kirim h2 {
+          background-color: #0ef;
+          color: black;
+          width: 200px;
+          height: 40px;
+          text-align: center;
+          justify-content: center;
+          align-items:center;
+          margin: 10px 0px 50px 150px;
+          border-radius: 10px;
+        
+          
+         }
+         
+         .kirim h2:hover {
+           color: #0ef;
+           background-color: black;
+           border: 1px solid #0ef;
+           transform: scale(1) translateY();
+           transition: .5s;
+         }
+
+         
+       
+    </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="Logoo.png" alt="logo">
+    
+  </div>
+   <nav>
+     <a href="#home">Home<span></span></a>
+     <a href="#about me">About me<span></span></a>
+     <a href="#service">My skill<span></span></a>
+     <a href="#contact">Contact<span></span></a>
+  </nav>   
+<section id="about me">
+  <div class="home">
+    
+    <img src="Farsya.png">
+     <h2>hallo it's me<br> <b style="font-size:30px; color: #0ef;">Muhammad Farsya Surya</b>
+     <br> and i'm a <b style="font-size: 30px; color: #0ef;">Web Developer</b></h2>
+     <p style="color: #9c9c9c; font-size: 22px; margin-top: 20px;">saya adalah seorang santri yang bercita cita menjadi programmer</p>
+     
+     
+  </div>
+   <div class="sosmed">
+    <div class="instagram">
+    <a href="https://www.instagram.com/farsyasurya___?igsh=ajI1bXRnNDV6bnFk"><img src="Instagram.png"></a>
+   </div>
+    <div class="tiktok">
+    <a href="https://www.tiktok.com/@farsyasurya06"><img src="Tiktok.png"></a>
+  </div>
+</div>
+</section>
+<section id="about me">
+   <h1 style="margin: 50px; color: #0ef;
+   " >About me</h1>
+    <p style="color: #9c9c9c; font-size: 22px; margin-top: 20px;">Profil saya tentang pengalaman dalam pembelajaran</p>
+ <div class="about">
+  
+    
+   <div class="sekolah">
+     <h1 style="margin-top: 10px;">School</h1>
+            <p style="color: #9c9c9c; font-size: 15px; margin-top: 10px;">Ponpes Anshor Al-sunnah</p>
+     <img src="FB.jpg">
+     <a href="https://www.instagram.com/ponpes.anshor.alsunnah?igsh=Nm9qN3I2eTRvdXVn"><h2>lihat</h2></a>
+   </div>
+   <div class="sekolah">
+     <h1 style="margin-top: 10px;">Organitation</h1>
+       <p style="color: #9c9c9c; font-size: 15px; margin-top: 10px;">Osas Atharva</p>
+     <img src="Atharva.png" style="width: 180px; height:;">
+     <a href="https://www.instagram.com/atharva19___?igsh=cjAxdnVzaGtxYjd6"><h2>lihat</h2></a>
+   </div>
+
+ </div>
+    <div class="courses">
+        <div class="sekolah">
+     <h1 style="margin-top: 10px;">Courses</h1>
+            <p style="color: #9c9c9c; font-size: 15px; margin-top: 10px;">Kelas coding skilvul</p>
+     <img src="skilvul-500.png">
+     <a href="https://skilvul.com/"><h2>lihat</h2></a>
+   </div>
+   <div class="sekolah">
+     <h1 style="margin-top: 10px;">Comunity</h1>
+       <p style="color: #9c9c9c; font-size: 15px; margin-top: 10px;">IT INDO</p>
+     <img src="IT.jpg" style="width: 180px; height:;">
+     <a href="https://t.me/ITIndo"><h2>lihat</h2></a>
+   </div>
+   </div>
+   
+ </section>
+ 
+    <h1 style="margin: 50px; color: #0ef;
+   " >My skill</h1>
+    <p style="color: #9c9c9c; font-size: 22px; margin-top: 20px;">Skill sederhana saya dalam dunia pemograman yang masih saya pelajari</p>
+    <div class="skill">
+      <a href="https://skilvul.com/courses/html-dasar/student/clqot4vgd0opl01ldvuxw77tl"><img src="Html.png" style="width: 165px;"></a>
+      <a href="https://skilvul.com/courses/css-dasar/student/clqot4vgd0opl01ldvuxw77tl"><img src="Css.png"></a>
+    </div>
+        <h1 style="margin: 50px; color: #0ef;
+   " >Contact Me!</h1>
+    <p style="color: #9c9c9c; font-size: 22px; margin-top: 20px;">contact me!! come on</p>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Full name">
+  
+      </form>
+    </div>
+    <div class="kotak">
+             <input type="number" placeholder="No.Handpone" >
+    </div>
+        <div class="kontak">
+             <input type="email" placeholder="E-mail" >
+    </div>
+        </div>
+        <div class="pesan">
+             <input type="text" placeholder="your massage" >
+    </div>
+    <div class="kirim" style="text-align:center;">
+     <a href="" style="text-decoration: none;"> <h2>Send massage</h2></a>
+    </div>
+    
+</body>
